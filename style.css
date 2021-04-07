@@ -56,6 +56,46 @@
 .humbuger-menu {
     display: none;
 }
+
+/* sns */
+.sns-menu {
+    position: fixed;
+    top: 0;
+    right: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+}
+.sns {
+    margin-top: 100px;
+}
+.sns a {
+    font-size: 30px;
+}
+.sns li, a {
+    list-style: none;
+    margin-top: 50px;
+}
+.fa-instagram:hover {
+    color: purple;
+}
+.fa-facebook:hover {
+    color: blue;
+}
+.fa-twitter:hover {
+    color: skyblue;
+}
+.fa-youtube:hover {
+    color: red;
+}
+.sns-show {
+    right: 0px;
+    transition: right 0.7s;
+}
+
+/* sns */
 @media (min-width:320px) and (max-width: 900px) {
     .humbuger {
         position: fixed;
@@ -90,6 +130,9 @@
     .humbuger-show {
         right: 0;
         transition: right 0.9s;
+    }
+    .sns {
+        display: none;
     }
 }
 /* ハンバーガー */
