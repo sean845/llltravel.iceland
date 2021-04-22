@@ -196,24 +196,35 @@
     text-align: center;
     margin-top: 450px;
 }
+.map-title {
+    margin-bottom: 200px;
+}
 .map-title h1 {
     font-size: 50px;
     margin: 60px;
     color: gray;
     text-shadow: 2px 2px rgb(189, 188, 188);
 }
+.map-title article {
+    font-size: 20px;
+    letter-spacing: 5px;
+    line-height: 70px;
+}
+.map-title nav {
+    display: none;
+}
 .map img {
     border-radius: 30px;
 }
 .capital {
     position: relative;
-    top: -310px;
-    left: 380px;
+    top: -350px;
+    left: 350px;
 }
 .volcano {
     position: relative;
     top: -280px;
-    left: 430px;
+    left: 350px;
 }
 .hotspring {
     position: relative;
@@ -223,41 +234,44 @@
 .waterfall {
     position: relative;
     top: -150px;
-    left: 430px;
+    left: 310px;
 }
 .scogafas {
     position: relative;
-    top: -180px;
-    left: 450px;
+    top: -220px;
+    left: 320px;
 }
 .hill {
     position: relative;
-    top: -120px;
-    left: 420px;
+    top: -150px;
+    left: 280px;
 }
 .diamond {
     position: relative;
     top: -250px;
-    left: 550px;
+    left: 300px;
 }
 .plane {
     position: relative;
     top: -100px;
-    left: 400px;
+    left: 250px;
 }
 .ice {
     position: relative;
-    top: -210px;
-    left: 480px;
+    top: -260px;
+    left: 230px;
 }
 .iceland {
     border-radius: 10px;
 }
 .iceland:hover {
-    transform: scale(3.0);
+    transform: scale(4.0);
     transition: all 0.7s;
 }
 @media (min-width:320px) and (max-width: 900px) {
+    .map-title {
+        margin-bottom: 80px;
+    }
     .map img {
         display: none;
     }
@@ -265,10 +279,20 @@
         display: none;
     }
     .map-title h1 {
-        font-size: 30px;
+        font-size: 25px;
         margin-top: -420px;
         color: gray;
         text-shadow: 1px 1px rgb(189, 188, 188);
+    }
+    .map-title article {
+        display: none;
+    }
+    .map-title nav {
+        display: block;
+        margin: 0 25px;
+        font-size: 15px;
+        letter-spacing: 3px;
+        line-height: 50px;
     }
 }
 
@@ -290,5 +314,115 @@
         list-style-type: none;
         text-shadow: 1px 1px rgb(189, 188, 188);
         margin-top: 10px;
+    }
+}
+
+.intro {
+    text-align: center;
+    margin-top: 180px;
+}
+.intro-title {
+    color: rgb(159, 159, 159);
+    text-shadow: 1px 1px rgb(163, 161, 161);
+}
+.intro-title h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+.intro-title h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+.intro-detail li {
+    margin: 0 100px;
+    margin-top: 100px;
+    border-top: 1px solid gray;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    list-style: none;
+} 
+.intro-detail article {
+    font-size: 20px;
+    line-height: 40px;
+}
+.intro-detail nav {
+    display: none;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .intro {
+        text-align: center;
+        margin-top: 100px;
+    }
+    .intro-title {
+        color: rgb(159, 159, 159);
+        text-shadow: 1px 1px rgb(163, 161, 161);
+    }
+    .intro-title h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    .intro-title h2 {
+        font-size: 25px;
+        letter-spacing: 0px;
+        margin-top: 10px;
+    }
+    .intro-detail li {
+        margin: 0 20px;
+        margin-top: 60px;
+        border-top: 1px solid gray;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .intro-detail article {
+        display: none;
+    }
+    .intro-detail nav {
+        display: block;
+        margin: 0 30px;
+    }
+}
+
+.travel {
+    text-align: center;
+    margin: 0 100px;
+    margin-top: 200px;
+}
+.travel-title {
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: rgb(132, 131, 131);
+    text-shadow: 1px 1px rgb(89, 89, 89);
+}
+
+.travel-detail h1 {
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: rgb(177, 177, 177);
+    text-shadow: 1px 1px rgb(132, 132, 132);
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .travel {
+        text-align: center;
+        margin: 0 20px;
+        margin-top: 100px;
+    }
+    .travel-title {
+        font-size: 13px;
+        letter-spacing: 0px;
+        color: rgb(132, 131, 131);
+        text-shadow: 1px 1px rgb(89, 89, 89);
+    }
+    
+    .travel-detail h1 {
+        font-size: 25px;
+        letter-spacing: 3px;
+        color: rgb(177, 177, 177);
+        text-shadow: 1px 1px rgb(132, 132, 132);
+        margin-top: 50px;
+        border-top: gray 1px solid;
+        padding-top: 20px;
     }
 }
