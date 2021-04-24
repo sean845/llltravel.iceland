@@ -5,9 +5,13 @@
 }
 .header-container {
     background-color: rgb(231, 228, 228);
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    height: 100px;
 }
 .title-container {
-    padding-top: 50px;
+    margin-top: 50px;
     text-align: center;
 }
 .title-container h1 {
@@ -20,7 +24,7 @@
     font-size: 20px;
 }
 .title-menu {
-    margin-top: 50px;
+    margin-top: 0px;
     background-color: rgb(239, 237, 237);
     height: 50px;
 }
@@ -39,11 +43,17 @@
     color: black;
 }
 @media (min-width:320px) and (max-width: 900px) {
+    .header-container {
+        height: 50px;
+    }
     .title-container {
-        margin-top: 0px;
+        margin-top: 50px;
         text-align: center;
     }
     .title-container h1 {
+        position: relative;
+        top: -50px;
+        line-height: 50px;
         font-size: 25px;
         letter-spacing: 2px;
     }
@@ -63,7 +73,7 @@
     .humbuger {
         display: block;
         position: fixed;
-        top: 40px;
+        top: 10px;
         right: 15px;
         z-index: 30;
     }
@@ -83,7 +93,7 @@
         justify-content: center;
         position: fixed;
         right: -500px;
-        height: 100%;
+        height: 120%;
         width: 100%;
         margin-top: -100px;
         background-color: white;
@@ -145,20 +155,28 @@
 
 .main-title h1 {
     position: relative;
-    top: -500px;
+    top: -320px;
+    z-index: 25;    
     text-align: center;
     letter-spacing: 60px;
     font-size: 60px;
     color: rgb(159, 159, 159);
     text-shadow: 2px 2px rgb(243, 242, 242);
 }
-.sub-title {
-    text-align: center;
-    margin-top: -450px;
-}
 .sub-title h1 {
+    position: relative;
     font-size: 40px;
     letter-spacing: 3px;
+    z-index: 25;
+    top: -180px;
+}
+.main-title img {
+    position: relative;
+    top: 130px;
+}
+.sub-title {
+    text-align: center;
+    margin-top: 50px;
 }
 .sub-title h2 {
     display: none;
@@ -167,7 +185,8 @@
 @media (min-width:320px) and (max-width: 900px) {
     .main-title h1 {
         position: relative;
-        top: -220px;
+        top: -150px;
+        z-index: 25;
         text-align: center;
         letter-spacing: 20px;
         font-size: 20px;
@@ -175,6 +194,8 @@
         text-shadow: 2px 2px rgb(243, 242, 242);
     }
     .main-title img {
+        position: relative;
+        top: 50px;
         width: 100%;
         height: 260px;
     }
@@ -194,7 +215,7 @@
 
 .map {
     text-align: center;
-    margin-top: 450px;
+    margin-top: 300px;
 }
 .map-title {
     margin-bottom: 200px;
@@ -280,7 +301,7 @@
     }
     .map-title h1 {
         font-size: 25px;
-        margin-top: -420px;
+        margin-top: -100px;
         color: gray;
         text-shadow: 1px 1px rgb(189, 188, 188);
     }
@@ -439,4 +460,37 @@
     margin-top: 50px;
     font-size: 15px;
     line-height: 40px;
+}
+.capital-detail nav {
+    display: none;
+}
+
+@media (min-width:320px) and (max-width: 900px) {
+    .travel-capital h1 {
+        margin-top: 100px;
+        padding-top: 30px;
+        border-top: 1px solid gray;
+    }
+    .capital-detail {
+        display: inline-block;
+        /* justify-content: space-evenly;
+        align-items: center; */
+        width: 100%;
+        margin-top: 50px;
+        font-size: 15px;
+        line-height: 40px;
+    }
+    .capital-detail article {
+        display: none;
+    }
+    .capital-detail nav {
+        display: block;
+        margin-top: 30px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .capital-detail img {
+        width: 100%;
+        height: 250px;
+    }
 }
