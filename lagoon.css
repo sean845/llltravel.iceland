@@ -1,0 +1,306 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header-container {
+    background-color: rgb(231, 228, 228);
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    height: 100px;
+}
+.title-container {
+    margin-top: 50px;
+    text-align: center;
+}
+.title-container h1 {
+    font-size: 40px;
+    letter-spacing: 7px;
+}
+.title-container a, li {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+}
+.title-menu {
+    margin-top: 0px;
+    background-color: rgb(239, 237, 237);
+    height: 50px;
+}
+.title-menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 50px;
+    list-style: none;
+}
+.title-menu li:hover {
+    transform: scale(1.5);
+    transition: all 0.7s;
+    color: black;
+}
+.title-menu a:hover {
+    color: black;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .header-container {
+        height: 50px;
+    }
+    .title-container {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .title-container h1 {
+        position: relative;
+        top: -50px;
+        line-height: 50px;
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    .title-menu {
+        display: none;
+    }
+}
+
+/* ハンバーガー */
+.humbuger {
+    display: none;
+}
+.humbuger-menu {
+    display: none;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .humbuger {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 15px;
+        z-index: 30;
+    }
+    .line {
+        width: 30px;
+        height: 3px;
+        background-color: rgb(7, 7, 7);
+        margin-top: 5px;
+        transition: all 0.7s;
+    }
+    .spin {
+        transform: rotate(270deg);
+    }
+    .humbuger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: -500px;
+        height: 120%;
+        width: 100%;
+        margin-top: -100px;
+        background-color: white;
+    }
+    .humbuger-menu li {
+        list-style: none;
+        margin-top: 40px;
+    }
+    .humbuger-menu a {
+        font-size: 30px;
+    }
+    .humbuger-show {
+        right: 0px;
+        transition: all 0.7s;
+    }
+}
+
+/* sns */
+.sns-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    background-color: white;
+}
+.sns {
+    margin-top: 100px;
+}
+.sns a {
+    font-size: 30px;
+}
+.sns li, a {
+    list-style: none;
+    margin-top: 50px;
+}
+.fa-instagram:hover {
+    color: purple;
+}
+.fa-facebook:hover {
+    color: blue;
+}
+.fa-twitter:hover {
+    color: skyblue;
+}
+.fa-youtube:hover {
+    color: red;
+}
+.sns-show {
+    right: 0px;
+    transition: right 0.7s;
+}
+/* sns */
+
+.main-title h1 {
+    position: relative;
+    top: -500px;
+    z-index: 25;    
+    text-align: center;
+    letter-spacing: 60px;
+    font-size: 60px;
+    color: rgb(209, 206, 206);
+    text-shadow: 2px 2px rgb(110, 109, 109);
+}
+.sub-title h1 {
+    position: relative;
+    font-size: 40px;
+    letter-spacing: 3px;
+    z-index: 25;
+    top: -300px;
+}
+.main-title img {
+    position: relative;
+    top: 50px;
+}
+.sub-title {
+    text-align: center;
+    margin-top: 50px;
+}
+.sub-title h2 {
+    display: none;
+}
+
+@media (min-width:320px) and (max-width: 900px) {
+    .main-title h1 {
+        position: relative;
+        top: -150px;
+        z-index: 25;
+        text-align: center;
+        letter-spacing: 20px;
+        font-size: 20px;
+        color: rgb(159, 159, 159);
+        text-shadow: 2px 2px rgb(243, 242, 242);
+    }
+    .main-title img {
+        position: relative;
+        top: 50px;
+        width: 100%;
+        height: 260px;
+    }
+    .sub-title {
+        text-align: center;
+        margin-top: -170px;
+    }
+    .sub-title h1 {
+        display: none;
+    }
+    .sub-title h2 {
+        font-size: 15px;
+        letter-spacing: 3px;
+        line-height: 30px;
+    }
+}
+
+/* Travel */
+.travel {
+    text-align: center;
+    margin: 0 100px;
+    margin-top: 50px;
+}
+.travel-title {
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: rgb(75, 74, 74);
+    text-shadow: 2px 2px rgb(34, 34, 34);
+}
+
+.travel-detail h1 {
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: rgb(80, 79, 79);
+    text-shadow: 1px 1px rgb(132, 132, 132);
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .travel {
+        text-align: center;
+        margin: 0 20px;
+        margin-top: 100px;
+    }
+    .travel-title {
+        font-size: 13px;
+        letter-spacing: 0px;
+        color: rgb(132, 131, 131);
+        text-shadow: 1px 1px rgb(89, 89, 89);
+    }
+    
+    .travel-detail h1 {
+        font-size: 25px;
+        letter-spacing: 3px;
+        color: rgb(177, 177, 177);
+        text-shadow: 1px 1px rgb(132, 132, 132);
+        margin-top: 50px;
+        border-top: gray 1px solid;
+        padding-top: 20px;
+    }
+}
+
+/* Capital */
+.travel-lagoon h1 {
+    margin-top: 0px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid gray;
+}
+.lagoon-detail {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 15px;
+    line-height: 40px;
+}
+.lagoon-detail nav {
+    display: none;
+}
+
+@media (min-width:320px) and (max-width: 900px) {
+    .travel-lagoon h1 {
+        margin-top: 100px;
+        padding-top: 30px;
+        border-top: 1px solid gray;
+    }
+    .lagoon-detail {
+        display: inline-block;
+        /* justify-content: space-evenly;
+        align-items: center; */
+        width: 100%;
+        margin-top: 50px;
+        font-size: 15px;
+        line-height: 40px;
+    }
+    .lagoon-detail article {
+        display: none;
+    }
+    .lagoon-detail nav {
+        display: block;
+        margin-top: 30px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .lagoon-detail img {
+        width: 100%;
+        height: 250px;
+    }
+}
+/* Capital */
