@@ -169,7 +169,7 @@
     .page {
         position: fixed;
         top: 680px;
-        right: 50px;
+        right: 10px;
     }
     .page-container button {
         color: gray;
@@ -366,11 +366,12 @@
     }
     .selection-detail a {
         text-decoration: none;
-        font-size: 30px;
-        color: rgb(184, 182, 182);
+        font-size: 35px;
+        color: rgb(68, 68, 68);
         list-style-type: none;
-        text-shadow: 1px 1px rgb(189, 188, 188);
+        text-shadow: 1px 1px rgb(119, 118, 118);
         margin-top: 10px;
+        font-weight: 400;
     }
 }
 
@@ -602,6 +603,41 @@
         height: 250px;
     }
 }
+.others-title {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.others-detail {
+    display: flex;
+    justify-content: center;
+    margin: 30px 200px;
+}
+.content {
+    width: 100%;
+}
+.content h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .others-title {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .others-detail {
+        display: block;
+        justify-content: center;
+        margin: 20px;
+    }
+    .content {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .content h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
 
 .footer-container {
     background-color: rgb(231, 230, 230);
@@ -614,6 +650,14 @@
 }
 
 @media (min-width:320px) and (max-width: 900px) {
-    margin-top: 80px;
-    font-size: 15px;
+    .footer-container {
+        background-color: rgb(231, 230, 230);
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        font-size: 20px;
+    }
+    
 }
