@@ -168,7 +168,7 @@
 @media (min-width:320px) and (max-width: 900px) {
     .page {
         position: fixed;
-        top: 680px;
+        top: 640px;
         right: 10px;
     }
     .page-container button {
