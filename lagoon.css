@@ -392,6 +392,80 @@
 }
 /* チケット */
 
+/* ドリンク、パック */
+.drink-title {
+    margin-top: 180px;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .drink-title {
+        margin-top: 80px;
+    }
+}
+/* ドリンク、パック */
+/* プロセス */
+.process-title {
+    margin-top: 180px;
+}
+.process {
+    margin-top: 30px;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .process-title {
+        margin-top: 80px;
+    }
+    .process {
+        margin-top: 10px;
+    }
+}
+/* プロセス */
+/* ヒント */
+.tips-title {
+    margin-top: 180px;
+}
+.tips {
+    margin-top: 30px;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .tips-title {
+        margin-top: 80px;
+    }
+    .tips {
+        margin-top: 10px;
+    }
+}
+/* ヒント */
+/* オプション */
+.option-title {
+    margin-top: 180px;
+}
+.option {
+    margin-top: 30px;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .option-title {
+        margin-top: 80px;
+    }
+    .option {
+        margin-top: 10px;
+    }
+}
+/* オプション */
+/* まとめ */
+.summary-title {
+    margin-top: 180px;
+}
+.summary {
+    margin-top: 30px;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .summary-title {
+        margin-top: 80px;
+    }
+    .summary {
+        margin-top: 10px;
+    }
+}
+/* まとめ */
 
 
 
