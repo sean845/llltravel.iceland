@@ -198,8 +198,7 @@
     top: -300px;
 }
 .main-title img {
-    position: relative;
-    top: 50px;
+    display: none;
 }
 .sub-title {
     text-align: center;
@@ -221,10 +220,14 @@
         text-shadow: 2px 2px rgb(243, 242, 242);
     }
     .main-title img {
+        display: block;
         position: relative;
         top: 50px;
         width: 100%;
         height: 260px;
+    }
+    .main-title video {
+        display: none;
     }
     .sub-title {
         text-align: center;
